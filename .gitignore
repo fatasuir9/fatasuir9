@@ -5,4 +5,4 @@ temp
 node_modules/*
 build/*
 
-public/templates/*
+public/views/*.php

@@ -20,6 +20,7 @@ module.exports = function(grunt) {
         base: 'public',
 
         // Destination public directory: Global
+		view: 'public/views',
         css: 'public/css',
         js: 'public/js',
         image: 'public/images',
@@ -41,13 +42,26 @@ module.exports = function(grunt) {
 				expand: true,
 				cwd: '<%= srcDir.jade %>',
 				src: ['**/*.jade'],
-				dest: '<%= distDir.base %>',
+				dest: '<%= distDir.view %>',
 				ext: '.php'
 			}]
 		}
-    },
+	},
 
-    // Task no. 2: Sass
+	// Task no. 2: HTMLmin
+	htmlmin:{
+		dist: {
+			options: {
+				removeComments: true,
+				collapseWhitespace: true
+			},
+			files: {
+				'<%= distDir.base %>/index.php': '<%= distDir.view %>/index.php',
+			}
+		},
+	},
+
+    // Task no. 3: Sass
     sass:{
         options:{
             style: 'compressed', // Sass file style
@@ -55,7 +69,7 @@ module.exports = function(grunt) {
             cacheLocation: 'temp/sass', // Cached sass location
             update: true // Only compile changed files
         },
-        dest:{
+        dist:{
             files:[{
                 expand: true,
                 cwd: '<%= srcDir.sass %>',
@@ -66,13 +80,13 @@ module.exports = function(grunt) {
         },
     },
 
-    // Task no. 3: Uglify
+    // Task no. 4: Uglify
     uglify:{
         options:{
 	        mangle: false, // Avoid functions - variables rename
 	        preserveComments: 'some' // Preserve all comments that start with a bang (!)
     	},
-	    dest:{
+	    dist:{
 	        files:[{
 	            '<%= distDir.js %>/script.min.js':[
 	                '<%= srcDir.js %>/libs/jquery-1.11.3.min.js',
@@ -82,7 +96,7 @@ module.exports = function(grunt) {
     	},
     },
 
-    // Task no. 4: Image
+    // Task no. 5: Image
     image:{
         dynamic:{
             files:[{
@@ -94,7 +108,7 @@ module.exports = function(grunt) {
         },
     },
 
-    // Task no. 5: Watch
+    // Task no. 6: Watch
     watch:{
         options:{
             spawn: false,
@@ -102,7 +116,7 @@ module.exports = function(grunt) {
         },
 		jade: {
 			files: '<%= srcDir.jade %>/**/*.jade',
-			tasks: ['jade']
+			tasks: ['jade', 'htmlmin']
 		},
 		sass: {
 			files: '<%= srcDir.sass %>/**/*.{scss,sass}',
@@ -114,7 +128,7 @@ module.exports = function(grunt) {
 		},
     },
 
-    // Task no. 6: Pagespeed
+    // Task no. 7: Pagespeed
     pagespeed:{
         options:{
             nokey: true,
@@ -139,13 +153,14 @@ module.exports = function(grunt) {
     // Combined Tasks
 
     // Deployment
-    grunt.registerTask('deploy',['jade', 'sass', 'uglify', 'image', 'pagespeed']);
+    grunt.registerTask('deploy',['jade', 'htmlmin', 'sass', 'uglify', 'image', 'pagespeed']);
 
     //Default
     grunt.registerTask('default',['watch']);
 
     // Depenent plugins
 	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-image');
