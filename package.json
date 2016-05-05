@@ -1,12 +1,17 @@
 {
-  "name": "Ghis Bakour | Senior UI/UX Specialist Freelance Web Designer Front End Developer ",
+  "name": "fata",
   "version": "0.0.1",
   "description": "Senior UI/UX Specialist Freelance Web Designer Front End Developer",
   "main": "index.php",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-image": "^1.5.0",
+    "grunt-pagespeed": "^2.0.0",
+    "time-grunt": "^1.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,7 +33,7 @@
     "developer"
   ],
   "author": "Ghis Bakour",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fatasuir9/fatasuir9/issues"
   },
