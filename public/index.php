@@ -27,18 +27,20 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     
-    ga('create', 'UA-', 'fatasuir9.com');
+    ga('create', 'UA-30104020-1', 'fatasuir9.com');
     ga('send', 'pageview');
   </script>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="wrapper">
-    <div class="content"><img src="../images/logo-w.png" alt="">
-      <h1 class="ng-name">Ghis Bakour</h1>
-      <p class="ng-tag">&lt; Senior UI/UX Specialist Freelance Web Designer Front End Developer /&gt;</p>
-      <div class="ng-social"><a href="#" class="github"></a><a href="#" class="twitter"></a><a href="#" class="linkedin"></a><a href="#" class="facebook"></a></div>
+  <section class="intro">
+    <div class="overlay"></div>
+    <div class="wrapper">
+      <div class="content"><img src="../images/logo-w.png" alt="Ghis Bakour logo 2016" width="160" class="logo">
+        <h1 class="name">Ghis Bakour</h1>
+        <p class="tag">&lt; Senior UI/UX Specialist Freelance Web Designer Front End Developer /&gt;</p>
+        <div class="social"><a target="_blank" href="http://github.com/fatasuir9" class="icon icon--github"><img src="../images/icons/icon-github.svg"></a><a target="_blank" href="http://dribbble.com/fatasuir9" class="icon icon--dribbble"><img src="../images/icons/icon-dribbble.svg"></a><a target="_blank" href="http://twitter.com/fatasuir9" class="icon icon--twitter"><img src="../images/icons/icon-twitter.svg"></a><a target="_blank" href="http://linkedin.com/in/fatasuir9" class="icon icon--linkedin"><img src="../images/icons/icon-linkedin.svg"></a></div>
+      </div>
     </div>
-  </div>
+  </section>
   <script type="text/javascript" src="../js/script.min.js"></script>
 </body></html>
