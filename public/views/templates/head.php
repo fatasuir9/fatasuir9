@@ -3,16 +3,17 @@
 <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui" name="viewport"/>
 <meta content="yes" name="mobile-web-app-capable"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="Ghis Bakour | Senior UI/UX Specialist Freelance Web Designer Front End Developer" name="title"/>
+<meta content="Ghis Bakour | Senior UI/UX Specialist, Freelance Web Designer, and Front End Developer" name="title"/>
 <meta content="As a creative designer by day and an avid problem solver at heart, he strives to develop intuitive user experiences from conception to implementation." name="description"/>
-<meta content="Ghis Bakour | Senior UI/UX Specialist Freelance Web Designer Front End Developer" property="og:title"/>
+<meta content="Ghis Bakour | Senior UI/UX Specialist, Freelance Web Designer, and Front End Developer" property="og:title"/>
 <meta content="As a creative designer by day and an avid problem solver at heart, he strives to develop intuitive user experiences from conception to implementation." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="http://fatasuir9.com" property="og:url"/>
-<meta content="images/logo-b.png" property="og:image"/>
+<meta content="http://fatasuir9.com/images/logo-b.png" property="og:image"/>
+<meta property="fb:app_id" content="113286748779444"/>
 <!-- Twitter-->
-<meta content="Ghis Bakour | Senior UI/UX Specialist Freelance Web Designer Front End Developer" name="twitter:site"/>
-<meta content="Ghis Bakour | Senior UI/UX Specialist Freelance Web Designer Front End Developer" name="twitter:title"/>
+<meta content="Ghis Bakour | Senior UI/UX Specialist, Freelance Web Designer, and Front End Developer" name="twitter:site"/>
+<meta content="Ghis Bakour | Senior UI/UX Specialist, Freelance Web Designer, and Front End Developer" name="twitter:title"/>
 <meta content="As a creative designer by day and an avid problem solver at heart, he strives to develop intuitive user experiences from conception to implementation." name="twitter:description"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="http://fatasuir9.com" name="twitter:url"/>
