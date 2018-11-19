@@ -1,5 +1,5 @@
 # Personal website
-Senior Product Designer and Creative Technologist
+New website is ready!
 
 ## Built with
 - [Grunt](https://gruntjs.com/) - JavaScript Task Runner
