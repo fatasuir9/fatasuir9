@@ -1,9 +1,10 @@
 .DS_Store
 
+node_modules
+build
+public
 temp
 
-node_modules/*
-build/*
-
-public/views/templates/*
-public/views/*.php
+resume.pdf
+robots.txt
+sitemap.xml

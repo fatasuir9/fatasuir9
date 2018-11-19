@@ -57,6 +57,9 @@ module.exports = function(grunt) {
 			},
 			files: {
 				'<%= distDir.base %>/index.php': '<%= distDir.view %>/index.php',
+				'<%= distDir.base %>/projects/index.php': '<%= distDir.view %>/projects/index.php',
+				'<%= distDir.base %>/recognition/index.php': '<%= distDir.view %>/recognition/index.php',
+				'<%= distDir.base %>/contact/index.php': '<%= distDir.view %>/contact/index.php',
 			}
 		},
 	},
@@ -84,12 +87,14 @@ module.exports = function(grunt) {
     uglify:{
         options:{
 	        mangle: false, // Avoid functions - variables rename
-	        preserveComments: 'some' // Preserve all comments that start with a bang (!)
+	        preserveComments: /(?:^!|@(?:license|preserve|cc_on))/
+			// Preserve all comments that start with a bang (!)
+			// https://github.com/gruntjs/grunt-contrib-uglify/issues/366
     	},
 	    dist:{
 	        files:[{
 	            '<%= distDir.js %>/script.min.js':[
-	                '<%= srcDir.js %>/libs/jquery-1.11.3.min.js',
+					'<%= srcDir.js %>/libs/particles.js',
 	                '<%= srcDir.js %>/script.js'
             	],
         	}]
@@ -153,7 +158,7 @@ module.exports = function(grunt) {
     // Combined Tasks
 
     // Deployment
-    grunt.registerTask('deploy',['jade', 'htmlmin', 'sass', 'uglify', 'image', 'pagespeed']);
+    grunt.registerTask('deploy',['jade', 'htmlmin', 'sass', 'uglify', 'image']);
 
     //Default
     grunt.registerTask('default',['watch']);
