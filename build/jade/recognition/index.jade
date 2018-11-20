@@ -8,6 +8,9 @@ doctype html
 		link(href='../css/style.css', rel='stylesheet', type='text/css')
 
 	body
+		.load
+			!= '<svg width="60" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bars"><rect ng-attr-x="{{config.x1}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="15" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="35" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="55" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x4}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="75" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>'
+
 		main.main
 			aside
 				img(class='logo'  src='../images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='120')
@@ -25,7 +28,7 @@ doctype html
 						li: a.nav-hyper(href="/contact")
 							span Contact
 							span Don't Be Shy, Say Hi
-				.copyright © 2018. All Rights Reserved.
+				.copyright
 
 			section.recognition
 				h1.label // Awards
@@ -35,14 +38,14 @@ doctype html
 					h1.headline RECOGNITION
 					hr
 
-					h3 Certifications ✨
+					h3 Certifications
 					p Interaction Design Foundation (IxD)
 					p NN/g UX Certified
 					p SP Design School UX Forum
 					p Certified ScrumMaster (CSM)
 
 
-					h3 Awards 🎉
+					h3 Awards
 					p
 						a(target="_blank" href="https://www.awwwards.com") Awwwards &nbsp;
 						span Site of the Day
@@ -58,13 +61,13 @@ doctype html
 						span Mobile of the day
 
 
-					h3 Hackathons 🏅
+					h3 Hackathons
 					a(target="_blank" href="https://sea.pcmag.com/iflix/12237/iflix-inaugural-hackathon-crowns-crowdsourcing-entry-as-top") IFlix_Hack Seize Ctrl
 					p AngelHack Smart Living
 					a(target="_blank" href="https://www.facebook.com/hackweekend/photos/?tab=album&album_id=191179437609519") Hackweekend #1
 
 
-					h3 Specialties 🕹
+					h3 Specialties
 					p UX Management
 					p UX Strategy
 					p Interaction Design

@@ -8,6 +8,9 @@ doctype html
 		link(href='../css/style.css', rel='stylesheet', type='text/css')
 
 	body
+		.load
+			!= '<svg width="60" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bars"><rect ng-attr-x="{{config.x1}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="15" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="35" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="55" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x4}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="75" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>'
+
 		main.main
 			aside
 				img(class='logo'  src='../images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='120')
@@ -25,7 +28,7 @@ doctype html
 						li: a.nav-hyper(href="/contact")
 							span Contact
 							span Don't Be Shy, Say Hi
-				.copyright © 2018. All Rights Reserved.
+				.copyright
 
 			section.projects
 				h1.label // Work
@@ -35,7 +38,7 @@ doctype html
 					h1.headline PROJECTS
 					hr
 
-					h3 2018 🚶
+					h3 2018
 					.project
 						img.project__screen(src='../images/projects/201811-project--isight.png' width='100%')
 						.project__details
@@ -50,7 +53,7 @@ doctype html
 							p Icons set designed for be used for a live video streaming service!
 							a.btn.btn--light(target="_blank" href='https://dribbble.com/shots/4645793-Live-video-streaming-icons') View the project →
 
-					h3 2017 🌊
+					h3 2017
 					.project
 						img.project__screen(src='../images/projects/201710-project--caterspot.png' width='100%')
 						.project__details
@@ -64,7 +67,7 @@ doctype html
 							h4 IFTTT Card Gallery
 							p This is a design concept to showcase a minimalist approach to the applet gallery in IFTTT platform.
 
-					h3 2016 🙌
+					h3 2016
 					.project
 						img.project__screen(src='../images/projects/201701-project--calendar.png' width='100%')
 						.project__details
@@ -114,7 +117,7 @@ doctype html
 							p I've been working closely with the engineering team to define and implement all our UI pattern library across the different markets that icarasia happen to be in.
 							a.btn.btn--light(target="_blank" href='https://fatasuir9.com/icarasia/engine.pdf') View the project →
 
-					h3 2015 😽
+					h3 2015
 					.project
 						img.project__screen(src='../images/projects/201602-project--morning.png' width='100%')
 						.project__details
@@ -148,7 +151,7 @@ doctype html
 							p Branding strategy and logo design to attract customers' attention to building a trustworthy trademark in the beauty and health industry.
 							a.btn.btn--light(target="_blank" href='https://dribbble.com/shots/2270052-RejuveGroup-logo') View the project →
 
-					h3 2014 🚀
+					h3 2014
 					.project
 						img.project__screen(src='../images/projects/201412-project--tc.png' width='100%')
 						.project__details
