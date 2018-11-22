@@ -1,8 +1,22 @@
 doctype html
-!= "<html lang='en'>"
+!= "<html lang='en' xml:lang='en'>"
 	head
-		title='Ghis Bakour | Projects'
+		include ../templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | Projects')
+		meta(name='description', content="The best way to predict the future is to create it")
+
+		// Facebook
+		meta(property='og:title', content='Ghis Bakour | Projects')
+		meta(property='og:description', content="The best way to predict the future is to create it")
+
+		// Twitter
+		meta(name='twitter:title', content='Ghis Bakour | Projects')
+		meta(name='twitter:description', content="The best way to predict the future is to create it")
+
 		include ../templates/head.jade
+
+		title='Ghis Bakour | Projects'
 
 		link(href='../images/logo-b.png', rel='icon', type='image/png')
 		link(href='../css/style.css', rel='stylesheet', type='text/css')

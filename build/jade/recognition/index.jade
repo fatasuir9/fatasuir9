@@ -1,8 +1,22 @@
 doctype html
-!= "<html lang='en'>"
+!= "<html lang='en' xml:lang='en'>"
 	head
-		title='Ghis Bakour | Recognition'
+		include ../templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | Recognition')
+		meta(name='description', content="An award does not change the quality of a book")
+
+		// Facebook
+		meta(property='og:title', content='Ghis Bakour | Recognition')
+		meta(property='og:description', content="An award does not change the quality of a book")
+
+		// Twitter
+		meta(name='twitter:title', content='Ghis Bakour | Recognition')
+		meta(name='twitter:description', content="An award does not change the quality of a book")
+
 		include ../templates/head.jade
+
+		title='Ghis Bakour | Recognition'
 
 		link(href='../images/logo-b.png', rel='icon', type='image/png')
 		link(href='../css/style.css', rel='stylesheet', type='text/css')

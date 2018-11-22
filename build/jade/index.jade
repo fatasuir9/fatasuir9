@@ -1,8 +1,22 @@
 doctype html
-!= "<html lang='en'>"
+!= "<html lang='en' xml:lang='en'>"
 	head
-		title='Ghis Bakour | Senior Product Designer and Creative Technologist'
+		include templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | Home')
+		meta(name='description', content="Senior Product Designer and Creative Technologist with deep passion for helping people solve problems")
+
+		// Facebook
+		meta(property='og:title', content='Ghis Bakour | Home')
+		meta(property='og:description', content="Senior Product Designer and Creative Technologist with deep passion for helping people solve problems.")
+
+		// Twitter
+		meta(name='twitter:title', content='Ghis Bakour | Home')
+		meta(name='twitter:description', content="Senior Product Designer and Creative Technologist with deep passion for helping people solve problems")
+
 		include templates/head.jade
+
+		title='Ghis Bakour | Senior Product Designer and Creative Technologist'
 
 		link(href='images/logo-b.png', rel='icon', type='image/png')
 		link(href='css/style.css', rel='stylesheet', type='text/css')
