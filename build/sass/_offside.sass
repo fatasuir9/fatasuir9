@@ -1,0 +1,63 @@
+@media screen and (max-width: 880px)
+
+	.offside
+		position: fixed
+		width: 260px
+		height: 100%
+		top: 0
+		z-index: 9999
+		overflow: auto
+		-webkit-overflow-scrolling: touch
+
+
+	/* Left off-canvas elements default status: out of the page */
+	.offside,
+	.offside--left
+		left: -260px
+
+
+	/*
+	 * Left off-canvas element is open:
+	 * - off-canvas element slides in
+	 * - container elements slides out
+	 */
+	.offside--left.is-open,
+	.offside-js--is-left .offside-sliding-element
+		@include vendor(transform, translate3d(260px, 0, 0))
+
+
+	/* Elements Transitions */
+	.offside-js--interact .offside,
+	.offside-js--interact .offside-sliding-element
+		@include vendor(transition, transform .6s cubic-bezier(.16, .68, .43, .99))
+
+		/* improves performance issues on mobile*/
+		-webkit-backface-visibility: hidden
+		-webkit-perspective: 1000
+
+
+	/* Body overflow */
+	.offside-js--init
+		overflow-x: hidden
+
+
+
+
+	// Fallback movements for browser not supporting CSS 3d Transitions
+
+	/* Modernizr false negative csstransforms3d fix, reset CSS 3d Transitions */
+	.no-csstransforms3d .offside
+		@include vendor(transform, translate3d(0, 0, 0))
+
+	.no-csstransforms3d .offside-sliding-element
+		overflow-x: hidden
+		position: relative
+
+
+	/* Element is open: off-canvas element slides in */
+	.no-csstransforms3d .offside--left.is-open
+		left: 0
+
+	/* Element is open: container elements slide out */
+	.no-csstransforms3d > .offside-js--is-left .offside-sliding-element
+		right: -260px
