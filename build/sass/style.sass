@@ -138,7 +138,6 @@ ul
 	padding: 6px 12px
 
 button, input, textarea, select
-	@include vendor(border-radius, 3px)
 	@include vendor(box-sizing, border-box)
 	border: 0
 	background: #fff
@@ -542,6 +541,17 @@ section
 
 @media screen and (max-width: 880px)
 
+	.btn
+		font-size: 1.3rem
+
+	aside
+		.logo
+			margin: 0 35px 2em
+			width: 90px
+
+		.copyright
+			bottom: 60px
+
 	.btn--menu
 		display: block !important
 		position: absolute
@@ -552,7 +562,7 @@ section
 	.offside
 		background-color: $dark
 		padding: 20px 0
-		width: 260px
+		width: 190px
 
 	.offside-left
 		.logo
@@ -565,7 +575,7 @@ section
 		top: 40px
 
 		h1
-			font-size: 4rem
+			font-size: 3.6rem
 			line-height: 1em
 
 		h3
@@ -585,8 +595,13 @@ section
 
 		&.projects
 			.project .project__details
+				height: 70%
+
 				h4, p
 					display: none
+
+				.btn
+					font-size: 11px
 
 		&.contact
 			.form
@@ -621,6 +636,10 @@ section
 		width: 60px
 
 @media screen and (max-width: 880px) and (orientation : landscape)
+	.copyright
+		position: relative
+		bottom: 0
+
 	.social article:before,
 	.social article:after
 		height: 60px
@@ -637,13 +656,4 @@ section
  *\*------------------------------------
 
 
-
 // @supports (display: flex)
-// 	.intro,
-// 	.footer
-// 		display: flex
-// 		align-items: center
-// 		justify-content: center
-//
-// 		.wrapper
-// 			padding: 0
