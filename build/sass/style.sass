@@ -74,9 +74,12 @@ html
 body
 	font-size: 1.6rem
 
-h1, h2, h3, h4, h5, h6
+h1, h2
 	font-family: 'Quattrocento Sans', sans-serif
 	letter-spacing: -1px
+
+h3, h4, h5, h6
+	font-family: 'Quattrocento', sans-serif
 
 h1
 	font-size: 6rem
@@ -84,13 +87,13 @@ h1
 	margin: .6em 0
 
 h2
-	font-size: 5rem
+	font-size: 4rem
 	line-height: 5.8rem
 	margin: 6rem 0
 
 h3
-	font-size: 3.2rem
-	line-height: 4rem
+	font-size: 2.8rem
+	line-height: 4.2rem
 	margin: 4rem 0
 
 h4
@@ -98,8 +101,11 @@ h4
 	line-height: 3rem
 	margin: 3.2rem 0
 
-h5, h6
-	font-weight: 400
+h5
+	font-size: 2rem
+	font-weight: 700
+	line-height: 2rem
+	margin: 3rem 0
 
 p, a
 	font-family: 'Quattrocento', sans-serif
@@ -374,14 +380,13 @@ section
 		z-index: 0
 
 	.label
-		font-family: 'Quattrocento', sans-serif
 		color: rgb(220, 220, 220)
 		text-transform: uppercase
 		letter-spacing: -2px
 		right: 110px
 		top: 0
 		font-weight: 700
-		font-size: 100px
+		font-size: 80px
 		opacity: .4
 		writing-mode: vertical-lr
 
@@ -546,11 +551,17 @@ section
 
 	aside
 		.logo
-			margin: 0 35px 2em
+			margin: 0 35px 1.5em
 			width: 90px
+
+		nav li
+			.nav-hyper
+				padding: 4px 0 6px 40px
 
 		.copyright
 			bottom: 60px
+
+
 
 	.btn--menu
 		display: block !important
@@ -624,7 +635,7 @@ section
 	/* Just few cosmetic CSS for overlay fade in/out */
 	.offside-js--is-open .overlay
 		visibility: visible
-		opacity: .7
+		opacity: .8
 		-webkit-transition-delay: delay 0s
 		-o-transition-delay: delay 0s
 		transition-delay: delay 0s
