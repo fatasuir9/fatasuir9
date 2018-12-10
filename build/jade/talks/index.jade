@@ -3,20 +3,20 @@ doctype html
 	head
 		include ../templates/meta.jade
 
-		meta(name='title', content='Ghis Bakour | Recognition')
-		meta(name='description', content="An award does not change the quality of a book")
+		meta(name='title', content='Ghis Bakour | Talks ')
+		meta(name='description', content="The best way to predict the future is to create it")
 
 		// Facebook
-		meta(property='og:title', content='Ghis Bakour | Recognition')
-		meta(property='og:description', content="An award does not change the quality of a book")
+		meta(property='og:title', content='Ghis Bakour | Talks ')
+		meta(property='og:description', content="The best way to predict the future is to create it")
 
 		// Twitter
-		meta(name='twitter:title', content='Ghis Bakour | Recognition')
-		meta(name='twitter:description', content="An award does not change the quality of a book")
+		meta(name='twitter:title', content='Ghis Bakour | Talks ')
+		meta(name='twitter:description', content="The best way to predict the future is to create it")
 
 		include ../templates/head.jade
 
-		title='Ghis Bakour | Recognition'
+		title='Ghis Bakour | Talks '
 
 		link(href='../images/logo-b.png', rel='icon', type='image/png')
 		link(href='../css/style.css', rel='stylesheet', type='text/css')
@@ -43,10 +43,10 @@ doctype html
 						li: a.nav-hyper(href="/projects")
 							span Projects
 							span My Exhibition Room
-						li: a.nav-hyper(href="/talks")
+						li: a.nav-hyper.nav-hyper--active(href="/talks")
 							span Talks
 							span Back to Community
-						li: a.nav-hyper.nav-hyper--active(href="/recognition")
+						li: a.nav-hyper(href="/recognition")
 							span Recognition
 							span The Golden Trophies
 						li: a.nav-hyper(href="/contact")
@@ -55,52 +55,25 @@ doctype html
 
 				.copyright
 
-			section.recognition.offside-content
-				h1.label // Mentions
+			section.projects.offside-content
+				h1.label // Speaking
 				.arrow ↓
 
 				article
-					h1.headline RECOGNITION
+					h1.headline Talks
 					hr
-					h3 &ldquo;An award does not change the quality of a book&rdquo;
+					h3 &ldquo;To be a person is to have a story to tell&rdquo;
 
-					h4 CERTIFICATIONS
-					p Interaction Design Foundation (IxD)
-					p NN/g UX Certified
-					p SP Design School UX Forum
-					p Certified ScrumMaster (CSM)
+					h4 The Art of CSS Architecture
+					p Donec eleifend elit ut mauris mollis hendrerit. Proin ut eros non arcu rhoncus hendrerit eu id ipsum. Vivamus eget scelerisque dolor, nec condimentum quam. Quisque sollicitudin nec velit eu efficitur. Cras egestas dui sit amet tortor tincidunt, ut faucibus ante mollis.
 
-
-					h4 AWARDS
-					p
-						a(target="_blank" href="https://www.awwwards.com") Awwwards
-						span &nbsp; Site of the Day
-					p
-						a(target="_blank" href="https://www.cssdesignawards.com") CSS Design Awards
-						span &nbsp; Best Presentation
-					<br>
-					p
-						a(target="_blank" href="https://thefwa.com") The FWA
-						span &nbsp; Site of the Day
-					p
-						a(target="_blank" href="https://thefwa.com") The FWA
-						span &nbsp; Mobile of the day
+					a(class="anchor" href='/talks/css-architecture') View the slides
 
 
-					h4 HACHATHONS
-					a(target="_blank" href="https://sea.pcmag.com/iflix/12237/iflix-inaugural-hackathon-crowns-crowdsourcing-entry-as-top") IFlix_Hack Seize Ctrl
-					p AngelHack Smart Living
-					a(target="_blank" href="https://www.facebook.com/hackweekend/photos/?tab=album&album_id=191179437609519") Hackweekend #1
+					h4 Grunt v.s Gulp Task Runner
+					p Donec eleifend elit ut mauris mollis hendrerit. Proin ut eros non arcu rhoncus hendrerit eu id ipsum. Vivamus eget scelerisque dolor, nec condimentum quam. Quisque sollicitudin nec velit eu efficitur. Cras egestas dui sit amet tortor tincidunt, ut faucibus ante mollis.
 
-
-					h4 SPECIALTIES
-					p UX Management
-					p UX Strategy
-					p Interaction Design
-					p UX Research
-					p Mobile & Multi-Channel UX
-					p Workshops Facilitation
-					p Design Influence
+					a(class="anchor" href='/talks/task-runners') View the slides
 
 
 			figure.social

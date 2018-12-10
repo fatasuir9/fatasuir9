@@ -32,15 +32,20 @@ doctype html
 			.overlay
 
 			aside.menu.offside.offside--left
-				img(class='logo'  src='images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='120')
+				a.logo(href='/')
+					img(src='images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='100')
+
 				nav.nav
 					ul
 						li: a.nav-hyper.nav-hyper--active(href="/")
 							span Home
-							span Where The Heart Is
+							span Where the heart is
 						li: a.nav-hyper(href="/projects")
 							span Projects
 							span My Exhibition Room
+						li: a.nav-hyper(href="/talks")
+							span Talks
+							span Back to Community
 						li: a.nav-hyper(href="/recognition")
 							span Recognition
 							span The Golden Trophies
@@ -49,6 +54,7 @@ doctype html
 							span Don't Be Shy, Say Hi
 				.copyright
 
+
 			section.intro.offside-content
 				h1.label // Hello
 
@@ -56,8 +62,8 @@ doctype html
 					h1.headline GHIS
 						span BAKOUR
 					hr
-					h3 Senior Product Designer and Creative Technologist with deep passion for helping people solve problems. Currently, based in sunny Singapore 🇸🇬
-					a.btn(href="/projects") Explore my projects &nbsp; →
+					h3 Senior Designer and Creative Technologist with deep passion for helping people solve problems. Currently, based in sunny Singapore 🇸🇬
+					a.anchor.btn(href="/projects") Explore my Portfolio
 
 			figure.social
 				article
