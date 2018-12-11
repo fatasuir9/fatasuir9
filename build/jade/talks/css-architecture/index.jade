@@ -3,20 +3,20 @@ doctype html
 	head
 		include ../../templates/meta.jade
 
-		meta(name='title', content='Ghis Bakour | Talks ')
+		meta(name='title', content='Ghis Bakour | CSS Architecture ')
 		meta(name='description', content="The best way to predict the future is to create it")
 
 		// Facebook
-		meta(property='og:title', content='Ghis Bakour | Talks ')
+		meta(property='og:title', content='Ghis Bakour | CSS Architecture ')
 		meta(property='og:description', content="The best way to predict the future is to create it")
 
 		// Twitter
-		meta(name='twitter:title', content='Ghis Bakour | Talks ')
+		meta(name='twitter:title', content='Ghis Bakour | CSS Architecture ')
 		meta(name='twitter:description', content="The best way to predict the future is to create it")
 
 		include ../../templates/head.jade
 
-		title='Ghis Bakour | Talks '
+		title='Ghis Bakour | CSS Architecture '
 
 		link(href='../../images/logo-b.png', rel='icon', type='image/png')
 		link(href='../../css/style.css', rel='stylesheet', type='text/css')
@@ -56,7 +56,7 @@ doctype html
 				.copyright
 
 			section.projects.offside-content
-				h1.label // Speaking
+				h1.label // Decks
 				.arrow ↓
 
 				article
@@ -66,17 +66,7 @@ doctype html
 					h4 The Art of CSS Architecture
 					!= '<iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/76ebdcb214084300ad02a2dedf4b42b5?" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="550px"></iframe>'
 
-
-			figure.social
-				article
-					a.icon.icon--dribbble(target='_blank'  href='https://dribbble.com/fatasuir9')
-						img(src='../../images/icons/icon-dribbble.svg')
-					a.icon.medium(target='_blank'  href='https://medium.com/@fatasuir9')
-						img(src='../../images/icons/icon-medium.svg')
-					a.icon.icon--github(target='_blank'  href='https://github.com/fatasuir9')
-						img(src='../../images/icons/icon-github.svg')
-					a.icon.icon--linkedin(target='_blank'  href='https://linkedin.com/in/fatasuir9')
-						img(src='../../images/icons/icon-linkedin.svg')
+			include ../../templates/social.jade
 
 		include ../../templates/footer.jade
 != "</html>"

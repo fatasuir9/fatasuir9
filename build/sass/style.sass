@@ -115,7 +115,6 @@ p
 a
 	@include vendor(transition, background-color 400ms ease-in-out)
 	color: $dark
-	//text-decoration: none
 
 img
 	@include vendor(transition, filter 500ms linear 200ms)
@@ -174,6 +173,7 @@ textarea:focus
 
 	.btn
 		margin: 0
+		line-height: 1
 
 .alert
 	padding: 15px
@@ -210,6 +210,7 @@ textarea:focus
 
 
 .btn
+	@include vendor(transition, background-color 400ms ease-in-out)
 	border: 1px solid $dark
 	display: inline-block
 	margin-top: 20px
@@ -276,6 +277,16 @@ textarea:focus
 	.overlay
 		display: none
 
+.row
+	display: flex
+	justify-content: space-between
+	margin-bottom: 4rem
+
+	.column
+		flex: 1
+
+	.column:nth-child(even)
+		margin-left: 5%
 
 aside
 	flex: 0 1 200px
@@ -433,21 +444,11 @@ section
 		align-self: auto
 
 		h2
-			margin-bottom: 2rem
-
-	.row
-		display: flex
-		justify-content: space-between
-		margin-bottom: 4rem
-
-		.project
-			flex: 1
-
-		.project:nth-child(even)
-			margin-left: 5%
+			margin-bottom: 0
 
 	.project
 		position: relative
+		margin-top: 2em
 
 		.project__screen
 			display: block
