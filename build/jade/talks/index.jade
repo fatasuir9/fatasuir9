@@ -62,19 +62,33 @@ doctype html
 				article
 					h1.headline Talks
 					hr
-					h3.quattrocento &ldquo;To be a person is to have a story to tell&rdquo;
+					h3.quattrocento &ldquo;To be a designer is to have a story to tell&rdquo;
 
-					h4 The Art of CSS Architecture
-					p Let's admit it. Wiritng CSS can be a messy, unpleasant and chaotic process. We all feel guilty of writing redundant rules and unnessary lines of overrides. In addition, introducing a complicated naming convention and complex CSS selectors to style the right element. In this presentation, I share some industry standards on crafting a solid set of rules that will transform building enterprise applications into a piece of cake 🎂
+					.rows
 
-					a(class="anchor" href='/talks/css-architecture') View the slides
+						.row
+							h4 TASK ANALYSIS
+							p Task analysis is an effective user research method to identify the process of learning about users. The benefit of performning task analysis will give the advantege to understand in details how users perform their tasks and ultimetly achieve their goals.
 
+							a(class="anchor" href='/talks/task-analysis') View the slides
 
-					h4 Grunt v.s Gulp Task Runner
-					p There's no doubt that task runners exist for a purpose. Primarily is to boost productivity while working on web-based applications. There are many in the market that provide the same services and some of which are grunt & gulp. In this workshop presentation, I share the stage with a friend to go head to head on a battle of which task runner deserves the highest rank. Drum rolls!
+						.row
+							h4 INTERACTION DESIGN 101
+							p Undersatnding human computer interaction (HCI) is fundamental for new age designers. In this presentation, I explain the structue of behavioural interactive and digital systems. I walk-through the five dimensions of interactions and the essential usability principles as introduced by Nielsen & Schneiderman. In addition, the importance of goal driven design and how drafting an interaction strategy leads to a delightful user experience.
 
-					a(class="anchor" href='/talks/task-runners') View the slides
+							a(class="anchor" href='/talks/interaction-design') View the slides
 
+						.row
+							h4 THE ART OF CSS ARCHITECTURE
+							p Let's admit it. Wiritng CSS can be a messy, unpleasant and chaotic process. We all feel guilty of writing redundant rules and unnessary lines of overrides. In addition, introducing a complicated naming convention and complex CSS selectors to style the right element. In this presentation, I share some industry standards on crafting a solid set of rules that will transform building enterprise applications into a piece of cake 🎂
+
+							a(class="anchor" href='/talks/css-architecture') View the slides
+
+						.row
+							h4 GRUNT VS. GULP TASK RUNNER
+							p There's no doubt that task runners exist for a purpose. Primarily is to boost productivity while working on web-based applications. There are many in the market that provide the same services and some of which are grunt & gulp. In this workshop presentation, I share the stage with a friend to go head to head on a battle of which task runner deserves the highest rank. Drum rolls!
+
+							a(class="anchor" href='/talks/task-runners') View the slides
 
 			include ../templates/social.jade
 

@@ -59,6 +59,8 @@ module.exports = function(grunt) {
 				'<%= distDir.base %>/index.php': '<%= distDir.view %>/index.php',
 				'<%= distDir.base %>/projects/index.php': '<%= distDir.view %>/projects/index.php',
 				'<%= distDir.base %>/talks/index.php': '<%= distDir.view %>/talks/index.php',
+				'<%= distDir.base %>/talks/interaction-design/index.php': '<%= distDir.view %>/talks/interaction-design/index.php',
+				'<%= distDir.base %>/talks/task-analysis/index.php': '<%= distDir.view %>/talks/task-analysis/index.php',
 				'<%= distDir.base %>/talks/css-architecture/index.php': '<%= distDir.view %>/talks/css-architecture/index.php',
 				'<%= distDir.base %>/talks/task-runners/index.php': '<%= distDir.view %>/talks/task-runners/index.php',
 				'<%= distDir.base %>/recognition/index.php': '<%= distDir.view %>/recognition/index.php',

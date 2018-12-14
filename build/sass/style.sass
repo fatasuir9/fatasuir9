@@ -199,7 +199,6 @@ textarea:focus
 
 .quattrocento
 	font-family: 'Quattrocento', sans-serif
-	letter-spacing: .2px
 
 .anchor
 
@@ -271,9 +270,8 @@ textarea:focus
 	flex-direction: row
 	flex-wrap: nowrap
 	align-items: stretch
-	height: 100%
 	overflow-y: scroll
-
+	height: 100%
 	background-color: $light
 	color: $dark
 
@@ -281,16 +279,33 @@ textarea:focus
 	.overlay
 		display: none
 
-.row
+.columns,
+.rows
 	display: flex
-	justify-content: space-between
 	margin-bottom: 4rem
+
+.columns
+	justify-content: space-between
 
 	.column
 		flex: 1
 
 	.column:nth-child(even)
 		margin-left: 5%
+
+.rows
+	flex-direction: column
+	justify-content: center
+
+	.row
+		flex: 0 1 auto
+		margin-bottom: 3em
+
+		&:last-child
+			margin-bottom: 0
+
+		h4
+			margin: 0 0 1rem
 
 aside
 	flex: 0 1 200px
@@ -615,7 +630,7 @@ section
 				line-height: .9em
 
 		&.projects
-			.row
+			.columns
 				flex-wrap: wrap
 
 			.project
