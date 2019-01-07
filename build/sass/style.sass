@@ -125,9 +125,13 @@ hr
 	border: 0
 	border-top: 1px solid rgb(14, 14, 33)
 
-ul
-	list-style: none
+ul, ol
+	line-height: 2rem
+	padding-left: 1.2em
+	margin-bottom: 2rem
 
+ul
+	list-style: square
 
 /*------------------------------------*\
  *    $FORMS
@@ -351,6 +355,12 @@ aside
 	nav
 		text-align: left
 
+		ul
+			list-style: none
+			line-height: normal
+			margin: 0
+			padding: 0
+
 		li
 			margin-bottom: 20px
 
@@ -454,6 +464,12 @@ section
 		.quattrocento
 				letter-spacing: -0.5px
 
+// About
+.about
+	.circle
+		margin: 2em 0 2em 2em
+		float: right
+
 .projects,
 .contact,
 .recognition
@@ -472,17 +488,22 @@ section
 		position: relative
 		margin-top: 2em
 
-		.project__screen
-			display: block
-			margin: 0 0 2rem
-
 		.project__details
 
 			h4
 				font-family: 'Quattrocento Sans', sans-serif
 				font-size: 1.8rem
 				text-transform: uppercase
-				margin: 0 0 12px
+
+.projects,
+.talks
+
+	img[class*='__screen']
+		display: block
+		width: 100%
+
+	h4
+		margin-bottom: 12px
 
 // Recognition page
 .recognition
@@ -491,7 +512,6 @@ section
 		margin-bottom: 1rem
 	p
 		margin-bottom: 0
-
 
 // Contact page
 .contact
@@ -627,16 +647,10 @@ section
 		.label
 			display: none
 
-		&.intro
-			h1
-				font-size: 5rem
-				line-height: .9em
+		.columns
+			flex-wrap: wrap
 
-		&.projects
-			.columns
-				flex-wrap: wrap
-
-			.project
+			.column
 				flex: 0 1 auto
 				margin-bottom: 4em
 
@@ -645,6 +659,13 @@ section
 
 				&:last-child
 					margin-bottom: 0
+
+		&.intro
+			h1
+				font-size: 5rem
+				line-height: .9em
+
+		&.projects
 
 			.project .project__details
 

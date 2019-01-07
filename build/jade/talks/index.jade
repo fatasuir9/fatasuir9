@@ -37,9 +37,9 @@ doctype html
 
 				nav.nav
 					ul
-						li: a.nav-hyper(href="/")
-							span Home
-							span Where the heart is
+						li: a.nav-hyper(href="/about")
+							span About
+							span The Creative Mind
 						li: a.nav-hyper(href="/projects")
 							span Projects
 							span My Exhibition Room
@@ -47,7 +47,7 @@ doctype html
 							span Talks
 							span Back to Community
 						li: a.nav-hyper(href="/recognition")
-							span Recognition
+							span Awards
 							span The Golden Trophies
 						li: a.nav-hyper(href="/contact")
 							span Contact
@@ -64,29 +64,43 @@ doctype html
 					hr
 					h3.quattrocento &ldquo;To be a designer is to have a story to tell&rdquo;
 
-					.rows
+					.columns
 
-						.row
+						.column.talk
+							a(href='/talks/task-analysis')
+								img.talk__screen(src='../images/slides/ta.png' alt='Task Analysis')
+
 							h4 TASK ANALYSIS
-							p Task analysis is an effective user research method to identify the process of learning about users. The benefit of performning task analysis will give the advantege to understand in details how users perform their tasks and ultimetly achieve their goals.
+							p Task analysis is an effective user research method to identify the process of learning about users and the tasks they perform on the system.
 
 							a(class="anchor" href='/talks/task-analysis') View the slides
 
-						.row
+						.column.talk
+							a(href='/talks/interaction-design')
+								img.talk__screen(src='../images/slides/ixd.png' alt='Interaction Design')
+
 							h4 INTERACTION DESIGN 101
-							p Undersatnding human computer interaction (HCI) is fundamental for new age designers. In this presentation, I explain the structue of behavioural interactive and digital systems. I walk-through the five dimensions of interactions and the essential usability principles as introduced by Nielsen & Schneiderman. In addition, the importance of goal driven design and how drafting an interaction strategy leads to a delightful user experience.
+							p Learn about the five dimensions that define interactions and the essential usability principles as introduced by Nielsen & Schneiderman.
 
 							a(class="anchor" href='/talks/interaction-design') View the slides
 
-						.row
+					.columns
+
+						.column.talk
+							a(href='/talks/css-architecture')
+								img.talk__screen(src='../images/slides/cssa.png' alt='CSS Architecture')
+
 							h4 THE ART OF CSS ARCHITECTURE
-							p Let's admit it. Wiritng CSS can be a messy, unpleasant and chaotic process. We all feel guilty of writing redundant rules and unnessary lines of overrides. In addition, introducing a complicated naming convention and complex CSS selectors to style the right element. In this presentation, I share some industry standards on crafting a solid set of rules that will transform building enterprise applications into a piece of cake 🎂
+							p Learn about some industry standards on crafting a solid set of rules that will transform building enterprise applications into a piece of cake.
 
 							a(class="anchor" href='/talks/css-architecture') View the slides
 
-						.row
+						.column
+							a(href='/talks/task-runners')
+								img.talk__screen(src='../images/slides/tr.png' alt='Task Runners')
+
 							h4 GRUNT VS. GULP TASK RUNNER
-							p There's no doubt that task runners exist for a purpose. Primarily is to boost productivity while working on web-based applications. There are many in the market that provide the same services and some of which are grunt & gulp. In this workshop presentation, I share the stage with a friend to go head to head on a battle of which task runner deserves the highest rank. Drum rolls!
+							p Learn about the differences between the most popular task runners and who deserve the highest rank. Drum rolls!
 
 							a(class="anchor" href='/talks/task-runners') View the slides
 

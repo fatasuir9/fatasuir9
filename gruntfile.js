@@ -57,7 +57,9 @@ module.exports = function(grunt) {
 			},
 			files: {
 				'<%= distDir.base %>/index.php': '<%= distDir.view %>/index.php',
+				'<%= distDir.base %>/about/index.php': '<%= distDir.view %>/about/index.php',
 				'<%= distDir.base %>/projects/index.php': '<%= distDir.view %>/projects/index.php',
+				'<%= distDir.base %>/projects/grypp/index.php': '<%= distDir.view %>/projects/grypp/index.php',
 				'<%= distDir.base %>/talks/index.php': '<%= distDir.view %>/talks/index.php',
 				'<%= distDir.base %>/talks/interaction-design/index.php': '<%= distDir.view %>/talks/interaction-design/index.php',
 				'<%= distDir.base %>/talks/task-analysis/index.php': '<%= distDir.view %>/talks/task-analysis/index.php',
@@ -164,7 +166,7 @@ module.exports = function(grunt) {
     // Combined Tasks
 
     // Deployment
-    grunt.registerTask('deploy',['jade', 'htmlmin', 'sass', 'uglify', 'image']);
+    grunt.registerTask('build',['jade', 'htmlmin', 'sass', 'uglify', 'image']);
 
     //Default
     grunt.registerTask('default',['watch']);

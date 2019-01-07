@@ -3,20 +3,20 @@ doctype html
 	head
 		include ../templates/meta.jade
 
-		meta(name='title', content='Ghis Bakour | Recognition')
-		meta(name='description', content="An award does not change the quality of a book")
+		meta(name='title', content='Ghis Bakour | About')
+		meta(name='description', content="Senior Creative Designer with 8+ years of experience and a deep passion for helping people solve problems. Currently based in Sunny Singapore.")
 
 		// Facebook
-		meta(property='og:title', content='Ghis Bakour | Recognition')
-		meta(property='og:description', content="An award does not change the quality of a book")
+		meta(property='og:title', content='Ghis Bakour | About')
+		meta(property='og:description', content="Senior Creative Designer with 8+ years of experience and a deep passion for helping people solve problems. Currently based in Sunny Singapore.")
 
 		// Twitter
-		meta(name='twitter:title', content='Ghis Bakour | Recognition')
-		meta(name='twitter:description', content="An award does not change the quality of a book")
+		meta(name='twitter:title', content='Ghis Bakour | About')
+		meta(name='twitter:description', content="Senior Creative Designer with 8+ years of experience and a deep passion for helping people solve problems. Currently based in Sunny Singapore.")
 
 		include ../templates/head.jade
 
-		title='Ghis Bakour | Recognition'
+		title='Ghis Bakour | Senior Creative Designer'
 
 		link(href='../images/logo-b.png', rel='icon', type='image/png')
 		link(href='../css/style.css', rel='stylesheet', type='text/css')
@@ -37,7 +37,7 @@ doctype html
 
 				nav.nav
 					ul
-						li: a.nav-hyper(href="/about")
+						li: a.nav-hyper.nav-hyper--active(href="/about")
 							span About
 							span The Creative Mind
 						li: a.nav-hyper(href="/projects")
@@ -46,63 +46,29 @@ doctype html
 						li: a.nav-hyper(href="/talks")
 							span Talks
 							span Back to Community
-						li: a.nav-hyper.nav-hyper--active(href="/recognition")
+						li: a.nav-hyper(href="/recognition")
 							span Awards
 							span The Golden Trophies
 						li: a.nav-hyper(href="/contact")
 							span Contact
 							span Don't Be Shy, Say Hi
-
 				.copyright
 
-			section.recognition.offside-content
-				h1.label // Mentions
-				.arrow ↓
+
+			section.about.offside-content
+				h1.label // About
 
 				article
-					h1.headline RECOGNITION
+					h1.headline IDENTITY
 					hr
-					h3.quattrocento &ldquo;An award does not change the quality of a book&rdquo;
 
-					.rows
-						.row
-							h4 CERTIFICATIONS
-							p Interaction Design Foundation (IxD)
-							p NN/g UX Certified
-							p SP Design School UX Forum
-							p Certified ScrumMaster (CSM)
+					img.circle(src='../images/ghis.png'  alt='Ghis'  width='300')
 
-						.row
-							h4 AWARDS
-							p
-								a(target="_blank" href="https://www.awwwards.com") Awwwards
-								span &nbsp; Site of the Day
-							p
-								a(target="_blank" href="https://www.cssdesignawards.com") CSS Design Awards
-								span &nbsp; Best Presentation
-							<br>
-							p
-								a(target="_blank" href="https://thefwa.com") The FWA
-								span &nbsp; Site of the Day
-							p
-								a(target="_blank" href="https://thefwa.com") The FWA
-								span &nbsp; Mobile of the day
+					h4.quattrocento Hi, my name is Ghis and I'm a Senior Designer with a deep passion for helping people solve problems. I pride himself on being able to develop intuitive and consistent digital experiences from conceptualisation to ideation.
 
-						.row
-							h4 HACHATHONS
-							a(target="_blank" href="https://sea.pcmag.com/iflix/12237/iflix-inaugural-hackathon-crowns-crowdsourcing-entry-as-top") IFlix_Hack Seize Ctrl
-							p AngelHack Smart Living
-							a(target="_blank" href="https://www.facebook.com/hackweekend/photos/?tab=album&album_id=191179437609519") Hackweekend #1
+					h4.quattrocento With 8+ years of experience in applying numerous design principles, critical thinking and user-centred models, I became very adept at developing digital interfaces that are able to scale and run on multiple modern platforms.
 
-						.row
-							h4 SPECIALTIES
-							p UX Management
-							p UX Strategy
-							p Interaction Design
-							p UX Research
-							p Mobile & Multi-Channel UX
-							p Workshops Facilitation
-							p Design Influence
+					h4.quattrocento I have a keen interest in emerging technologies and relishes taking on new opportunities that will allow him to further develop his skill set to reach new professional milestones.
 
 			include ../templates/social.jade
 

@@ -1,0 +1,313 @@
+doctype html
+!= "<html lang='en' xml:lang='en'>"
+	head
+		include ../../templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | Grypp')
+		meta(name='description', content="")
+
+		// Facebook
+		meta(property='og:title', content='Ghis Bakour | Grypp')
+		meta(property='og:description', content="")
+
+		// Twitter
+		meta(name='twitter:title', content='Ghis Bakour | Grypp')
+		meta(name='twitter:description', content="")
+
+		include ../../templates/head.jade
+
+		title='Ghis Bakour | Grypp'
+
+		link(href='../../images/logo-b.png', rel='icon', type='image/png')
+		link(href='../../css/style.css', rel='stylesheet', type='text/css')
+
+	body
+		.load
+			!= '<svg width="60" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bars"><rect ng-attr-x="{{config.x1}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="15" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="35" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="55" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x4}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="75" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>'
+
+		main.main
+			a.btn.btn--menu(href="#")
+				img(src='../../images/icons/icon-menu.svg')
+
+			.overlay
+
+			aside.menu.offside.offside--left
+				a.logo(href='/')
+					img(src='../../images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='100')
+
+				nav.nav
+					ul
+						li: a.nav-hyper(href="/about")
+							span About
+							span The Creative Mind
+						li: a.nav-hyper.nav-hyper--active(href="/projects")
+							span Projects
+							span My Exhibition Room
+						li: a.nav-hyper(href="/talks")
+							span Talks
+							span Back to Community
+						li: a.nav-hyper(href="/recognition")
+							span Awards
+							span The Golden Trophies
+						li: a.nav-hyper(href="/contact")
+							span Contact
+							span Don't Be Shy, Say Hi
+
+				.copyright
+
+			section.projects.offside-content
+				h1.label // Featured
+				.arrow ↓
+
+				article
+					h1.headline PROJECTS
+					hr
+					.rows
+						h4.quattrocento Grypp app
+
+						h5 Overview
+
+						p Global development will increase 15% by 2050 and it is supposed that around 6 billion people will live in urban areas. However the earth is not enough to fit 6 billion cars to park or ride on bigger roads. Moreover, the current economy does not encourage consumers to own cars due to the high interest of car loan, the high cost of fuel consumption and regular maintenance.
+
+						p Therefore we need to compare the different ways of real-time transportation. All transportation methods that can both be fast and affordable to consumers around the globe. Additionally and most importantly we have to think about the environment.
+
+						h5 Research
+
+						p There are a lot of transportation apps in the market at the moment. All of which are trying to solve the same problems, by trying to provide affordable and convenient services for consumers to move around the city in the safest and most efficient way possible. However, what I noticed by comparing few popular apps in the marketing is the lack of clarity. Users always face problems with the chaotic booking steps: where to enter their destination, selecting the payment method they prefer and so on.
+
+						p To begin my research, I need to gather data about the current problems and find out useful insights from real time users. Fortunately, I had the chance to interview real users of modern transportation app in Kuala Lumpur to collect data about how the current services are in fact performing against consumers’ demands.
+
+						p
+							i You can see the interviews&nbsp;
+								a(target='_blank' href='https://goo.gl/jjWexY') here
+
+						h5 Competitive analysis
+
+						p
+							strong Uber (Global)
+
+						ul
+							li UberX, XL, SELECT (Economy)
+							li UberBlack, UberSUV, UberLUX (Premium)
+							li UberPOOL (Carpool)
+							li UberEATS (Food delivery)
+							li UberRush (Product delivery)
+							li Introduces scheduled rides, Cash payments
+							li Self-driving car research
+							li Web booking (dial.uber.com)
+							li Safety (Ride tracking, SOS button, Driver/Passenger ratings)
+
+						p
+							strong Didi Chuxing (China)
+
+						ul
+							li Express (Economy)
+							li Didi Premium, Didi ACE (Premium)
+							li Hitch (Carpool)
+							li Designated driving (Getting replacement driver)
+							li Enterprise solutions (Business travel)
+							li SDK Kit (Integration, Hail a Didi Ride)
+							li Car test drive
+							li Wechat Pay, Alipay integration (Payment platform).
+							li Backed by Apple, Tencent, Alibaba
+							li Safety (Ride tracking, SOS button, Driver/Passenger ratings, Drivers check)
+
+						p
+							strong Ola (India)
+
+						ul
+							li Ola Micro, Mini, Prime, Auto (Economy)
+							li Ola Lux (Premium)
+							li Ola Share (Carpool)
+							li Ola Bike (Bikes)
+							li Ola Share Hotspot (Passengers gather at the same pickup spot)
+							li Ola Corporate (Business travel)
+							li Ola Shuttle (Daily commute)
+							li Ola Money (Payment platform)
+							li Tested Ola Store, Ola Cafe ideas
+							li Safety (Ride tracking, Driver/Passenger ratings)
+
+						h5 User personas
+
+						p The information that I have gathers during my interviews with users, helped me to look at the bigger picture and create user personas.
+
+
+						p
+							strong Persona 1: John
+
+						p
+							span Age: 27
+							br
+							span Occupation: Sales executive
+
+						ul
+							li John lives with his mother in a small town
+							li He works in a multinational company located in the city centre
+							li He is a tech savvy person and uses her iPhone as her primary device
+							li Most of his time is traveling and meeting new clients in various locations
+
+						p
+							span What does he need?
+							br
+							span He needs a fast, efficient way traveling around the city and meeting potential clients.
+
+						p
+							strong Persona 2: Victoria
+
+						p
+							span Age: 35
+							br
+							span Occupation: Teacher
+
+						ul
+							li Victoria is a single mother and lives alone
+							li She travels to school every morning by public transport
+							li She prefers to ride in a comfortable vehicle
+							li Most of her time is spent on the road
+
+						p
+							span What does she need?
+							br
+							span She needs an affordable regular personal driver to send her to school every morning.
+
+
+						h5 User Journey
+
+						p To begin with the user journey, I need to showcase the simplest scenario that users can go through. There are two user flows that can be proposed as the following:
+
+						ul
+							li Trip booking
+							li Arrival notification
+
+						.columns
+							.column
+								img(src='../../images/projects/grypp/uj__01.png' width='100%')
+							.column
+								img(src='../../images/projects/grypp/uj__02.png' width='100%')
+
+
+						h5 Prioritisation
+
+						p To be able to prioritise the important features that I need to include in the app, I use kano model framework to identify and prioritise on what is important for the rider to experience while using the app.
+
+						img(src='../../images/projects/grypp/kano.png' width='100%')
+
+						p
+							strong Basic attributes or Must be:
+
+						ul
+							li Safety
+							li Traceability through google maps
+							li Arrive to destination
+							li Select vehicle type
+							li Clear pricing
+
+						p
+							strong Performance attributes or One Dimensional:
+
+						ul
+							li Overall vehicle condition
+							li Friendly driver
+							li Automatic credit card payment
+							li Ability to pay cash
+							li Split your fare
+
+
+						p
+							strong Delight attributes or Attractive:
+
+						ul
+							li Driver fluency in English
+							li Analysis for customer needs
+							li Digital Receipts
+							li Rides history
+
+						p
+							i “Over time attractive qualities become another basic need”
+
+
+						h5 Wireframes
+
+						p As soon as I have enough information and analysis, I start with few sketches to define and determine the key points of the app. Furthermore, focus on delivering fabulous experience to users. The following wireframe is meant to be used for mobile users:
+
+						.columns
+							.column
+								img(src='../../images/projects/grypp/wf__01.png' width='100%')
+							.column
+								img(src='../../images/projects/grypp/wf__02.png' width='100%')
+
+
+
+						br
+						br
+
+						h5 High fidelity
+
+						p Once I have an idea about how my app would look like to the user, I start exploring the latest trends and visuals for my high fidelity prototypes. One of which, complexion reduction is a new modern term in app design these days and it focuses on:
+
+						ol
+							li Bigger and bolder fonts
+							li Simpler more universal icons
+							li Extraction of colour
+
+						p This particular trend tiles towards more white space to introduce clarity of content, bold and clear typography approach. Some of my favourite mobile apps have adapted such a trend and examples of that are the following:
+
+						img(src='../../images/projects/grypp/ex.png' width='100%')
+
+
+						h5 My Idea
+
+						p The grypp app is born with simple interface that invites users to request for a car within a matter of seconds. What sets grypp app away from competitors: The super fast booking method, accurate auto-suggest location, ease of use and the welcoming visuals of locations around the city.
+
+						.columns
+							.column
+								img(src='../../images/projects/grypp/app/01.png' width='100%')
+							.column
+								img(src='../../images/projects/grypp/app/02.png' width='100%')
+
+						.columns
+							.column
+								img(src='../../images/projects/grypp/app/03.png' width='100%')
+							.column
+								img(src='../../images/projects/grypp/app/04.png' width='100%')
+
+						.columns
+							.column
+								img(src='../../images/projects/grypp/app/05.png' width='100%')
+							.column
+
+						p
+							i Interactive prototype is available&nbsp;
+								a(target='_blank' href='https://invis.io/ZG90JVSNT') here
+
+
+						h5 Usability testing
+
+						p I have invited couple of people to test the grypp interactive prototype. During that period of time, it helped me to get real time feedback and insights. To begin, I provided simple tasks for users to perform and I patiently observed their reactions. At this stage of the product, it is completely useful to understand and find out whether the app is trying to solve existing problems that other competitors in the market are still trying to solve.
+
+						p I have prepared a video recording of one user whom tried the prototype for the first time. Watch the full recording below:
+
+						p
+							i Usability testing video is available&nbsp;
+								a(target='_blank' href='https://vimeo.com/188092960') here
+							br
+							i Password: gryppapp
+
+
+						h5 Feedback
+
+						p Most testers loved the fact that grypp app is very simple to use just by the interface design. However, some people suggested certain information to be displayed when viewing the trip route. An example of that would be to display the distance of the trip and estimated fare.
+
+						p One of the most requested feature is that users intend to be in control of their payment method right before they request a ride. This may require a brainstorm session to introduce such a step seamlessly with the next revision of the app.
+
+
+						h5 Conclusion
+
+						p It was a great experience to be able to experiment with prototyping a transportation app. This particular product can be scalable with many features ahead. Especially after the last round of usability testing and the amount of feedback I received. In the above analysis and collected data, this confirms that the grypp app is heading towards the right direction.
+
+
+
+			include ../../templates/social.jade
+
+		include ../../templates/footer.jade
+!= "</html>"
