@@ -1,0 +1,210 @@
+/*
+ *      #####
+ *     #### _\_  ________
+ *     ##=-[.].]| \      \
+ *     #(    _\ |  |------|
+ *      #   __| |  ||||||||
+ *       \  _/  |  ||||||||
+ *    .--'--'-. |  | ____ |
+ *   / __      `|__|[o__o]|
+ * _(____nm_______ /____\____
+ *
+ * @file
+ * Global Stylesheets
+ *
+ * @author
+ * Ghis Bakour <hello@fatasuir9.com>
+ *
+ * @copyright
+ * Copyright (c) fatasuir9.com, Ghis Bakour, 2018
+ *
+ */
+
+
+/*------------------------------------*\
+ *    $GLOBAL
+ *\*------------------------------------
+
+
+html,
+body
+	height: 100%
+	width: 100%
+
+
+html
+	font-size: 62.5%
+	box-sizing: border-box
+
+
+body
+	font-family: 'Quattrocento', sans-serif
+	font-size: 1.4rem
+
+*
+	margin: 0
+	padding: 0
+
+
+*
+	&,
+	&:before,
+	&:after
+		box-sizing: inherit
+
+
+/*------------------------------------*\
+ *    $HEADINGS
+ *\*------------------------------------
+
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'Quattrocento Sans', sans-serif
+	// letter-spacing: -1px
+
+
+h1, h2
+	letter-spacing: -1px
+
+
+h1
+	font-size: 6rem
+	line-height: .9em
+	margin: .6em 0
+
+
+h2
+	font-size: 4rem
+	line-height: 5.8rem
+	margin: 6rem 0
+
+
+h3
+	font-size: 2.8rem
+	line-height: 4.2rem
+	margin: 4rem 0
+
+
+h4
+	font-size: 2rem
+	line-height: 3rem
+	margin: 3.2rem 0
+
+
+h5
+	font-size: 1.8rem
+	font-weight: 700
+	line-height: 2rem
+	margin: 3rem 0
+
+
+p
+	line-height: 2rem
+	margin-bottom: 2rem
+
+
+a
+	@include vendor(transition, background-color 400ms ease-in-out)
+	color: $dark
+
+
+img
+	@include vendor(transition, filter 500ms linear 200ms)
+
+
+hr
+	display: block
+	height: 1px
+	border: 0
+	border-top: 1px solid rgb(14, 14, 33)
+
+
+/*------------------------------------*\
+ *    $LISTS
+ *\*------------------------------------
+
+
+ul, ol
+	line-height: 2rem
+	padding-left: 1.2em
+	margin-bottom: 2rem
+
+
+ul
+	list-style: square
+
+
+/*------------------------------------*\
+ *    $FORMS
+ *\*------------------------------------
+
+
+button, input, textarea, select
+	@include vendor(box-sizing, border-box)
+	border: 0
+	background: #fff
+	border: 1px solid #ddd
+	color: #6a6a6a
+	display: block
+	line-height: 1.6em
+	padding: 0 2%
+	width: 100%
+
+
+input, textarea, select
+	padding: 1em
+
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea:focus
+	&, &:hover, &:focus
+		-webkit-appearance: none
+		outline: none
+
+
+/*------------------------------------*\
+ *    $LAYOUTS
+ *\*------------------------------------
+
+
+aside
+	flex: 0 1 200px
+	align-self: stretch
+	order: 1
+
+	background-color: $dark
+	color: $light
+	height: 100%
+	position: fixed
+	width: 200px
+
+
+section
+	flex: 10 1 0
+	order: 2
+	display: flex
+	z-index: 0
+
+	@include vendor(font-smoothing, antialiased)
+	font-size: 100%
+	outline: 0
+	padding: 0 4em
+	position: relative
+	margin-bottom: 36px
+	margin-right: 80px
+	margin-left: 200px
+
+	article
+		font-family: 'Quattrocento', sans-serif
+		width: 80%
+		z-index: 1
+
+
+figure
+	flex: 0 1 60px
+	align-self: stretch
+	order: 3
+	display: flex
+	justify-content: center

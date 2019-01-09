@@ -1,0 +1,166 @@
+/*
+ *      #####
+ *     #### _\_  ________
+ *     ##=-[.].]| \      \
+ *     #(    _\ |  |------|
+ *      #   __| |  ||||||||
+ *       \  _/  |  ||||||||
+ *    .--'--'-. |  | ____ |
+ *   / __      `|__|[o__o]|
+ * _(____nm_______ /____\____
+ *
+ * @file
+ * Global Stylesheets
+ *
+ * @author
+ * Ghis Bakour <hello@fatasuir9.com>
+ *
+ * @copyright
+ * Copyright (c) fatasuir9.com, Ghis Bakour, 2018
+ *
+ */
+
+
+/*------------------------------------*\
+ *    $FORMS
+ *\*------------------------------------
+
+
+.form
+	position: relative
+	width: 80%
+
+.field
+	clear: both
+	margin: .6em 0 1.2em
+	overflow: hidden
+	padding: 6px 12px
+
+.form__item
+	margin: 0 0 1.6em 0
+	position: relative
+	text-align: left
+
+	.btn
+		margin: 0
+		line-height: 1
+
+.alert
+	padding: 15px
+	margin-bottom: 20px
+	margin-top: 20px
+	border: 1px solid transparent
+	border-radius: 4px
+
+.alert-success
+	color: #3c763d
+	background-color: #dff0d8
+	border-color: #d6e9c6
+
+.alert-danger
+	color: #a94442
+	background-color: #f2dede
+	border-color: #ebccd1
+
+
+/*------------------------------------*\
+ *    $COLUMNS & ROWS
+ *\*------------------------------------
+
+.columns,
+.rows
+	display: flex
+	margin-bottom: 4rem
+
+.columns
+	justify-content: space-between
+
+	.column
+		flex: 1
+
+	.column:nth-child(even)
+		margin-left: 5%
+
+.rows
+	flex-direction: column
+	justify-content: center
+
+	.row
+		flex: 0 1 auto
+		margin-bottom: 3em
+
+		&:last-child
+			margin-bottom: 0
+
+		h4
+			margin: 0 0 1rem
+
+
+/*------------------------------------*\
+ *    $MAIN
+ *\*------------------------------------
+
+
+.load
+	background: $light
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 2
+	display: flex
+	justify-content: center
+
+
+.main
+	@include vendor(box-sizing, border-box)
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	align-items: stretch
+	overflow-y: scroll
+	height: 100%
+	background-color: $light
+	color: $dark
+
+
+	.btn--menu,
+	.overlay
+		display: none
+
+
+section
+	article
+		.headline
+			font-family: 'Quattrocento Sans', sans-serif
+			font-weight: 700
+
+
+			span
+				display: block
+
+
+	.label,
+	.arrow
+		position: fixed
+		z-index: 0
+
+
+	.label
+		color: rgb(220, 220, 220)
+		text-transform: uppercase
+		letter-spacing: -2px
+		right: 110px
+		top: 0
+		font-weight: 700
+		font-size: 80px
+		opacity: .4
+		writing-mode: vertical-lr
+
+
+	.arrow
+		color: rgb(14, 12, 34)
+		right: 200px
+		bottom: 50px
+		font-size: 34px

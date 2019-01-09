@@ -1,0 +1,59 @@
+/*
+ *      #####
+ *     #### _\_  ________
+ *     ##=-[.].]| \      \
+ *     #(    _\ |  |------|
+ *      #   __| |  ||||||||
+ *       \  _/  |  ||||||||
+ *    .--'--'-. |  | ____ |
+ *   / __      `|__|[o__o]|
+ * _(____nm_______ /____\____
+ *
+ * @file
+ * Global Stylesheets
+ *
+ * @author
+ * Ghis Bakour <hello@fatasuir9.com>
+ *
+ * @copyright
+ * Copyright (c) fatasuir9.com, Ghis Bakour, 2018
+ *
+ */
+
+
+/*------------------------------------*\
+ *    $HEADINGS
+ *\*------------------------------------
+
+
+.quattrocento
+	font-family: 'Quattrocento', sans-serif
+
+.anchor
+
+	&:after
+		content: '→'
+		display: inline-block
+		margin-left: 6px
+		vertical-align: middle
+
+	&:hover
+		text-decoration: underline
+
+.block
+	display: block
+
+
+
+/*------------------------------------*\
+ *    $KEYFRAMES
+ *\*------------------------------------
+
+
+@keyframes pulse
+	from
+		@include vendor(transform, translate(0, 0))
+	50%
+		@include vendor(transform, translate(0, -3px))
+	to
+		@include vendor(transform, translate(0, 0))

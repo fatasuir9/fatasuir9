@@ -1,0 +1,171 @@
+/*
+ *      #####
+ *     #### _\_  ________
+ *     ##=-[.].]| \      \
+ *     #(    _\ |  |------|
+ *      #   __| |  ||||||||
+ *       \  _/  |  ||||||||
+ *    .--'--'-. |  | ____ |
+ *   / __      `|__|[o__o]|
+ * _(____nm_______ /____\____
+ *
+ * @file
+ * Global Stylesheets
+ *
+ * @author
+ * Ghis Bakour <hello@fatasuir9.com>
+ *
+ * @copyright
+ * Copyright (c) fatasuir9.com, Ghis Bakour, 2018
+ *
+ */
+
+
+/*------------------------------------*\
+ *    $MEDIA QURIES
+ *\*------------------------------------
+
+@media screen and (max-width: 880px)
+
+	.btn
+		font-size: 1.3rem
+
+	aside
+		.logo
+			margin: 0 30px 1.5em
+			width: 90px
+
+			img
+				width: 90px
+
+		nav li
+			.nav-hyper
+				padding: 4px 0 6px 30px
+
+				span:nth-of-type(1)
+					font-size: 1.4rem
+
+			.nav-hyper--active:after
+				left: 30px
+
+		.copyright
+			bottom: 60px
+
+
+
+	.btn--menu
+		display: block !important
+		position: absolute
+		left: .9em
+		top: 1em
+		z-index: 2
+
+	.offside
+		background-color: $dark
+		padding: 20px 0
+		width: 190px
+
+	.offside-left
+		.logo
+			margin: 1.6em 36px 3em
+
+	.offside-content
+		align-self: flex-start
+		margin: 2em 0
+		padding: 0 3em
+		top: 40px
+
+		h1
+			font-size: 3.6rem
+			line-height: 1em
+
+		h3
+			font-size: 2.4rem
+			line-height: 3.4rem
+
+		article
+			width: 90%
+
+		.label
+			display: none
+
+		.columns
+			flex-wrap: wrap
+
+			.column
+				flex: 0 1 auto
+				margin-bottom: 4em
+
+				&:nth-child(even)
+					margin-left: 0
+
+				&:last-child
+					margin-bottom: 0
+
+		&.intro
+			h1
+				font-size: 5rem
+				line-height: .9em
+
+		&.about
+			.circle
+				margin: 2em 0
+				width: 100%
+
+		&.projects
+
+			.project .project__details
+
+				.btn
+					font-size: 11px
+
+		&.talks
+			iframe
+				height: 360px
+
+		&.contact
+			.form
+				width: 100%
+
+	.overlay
+		@include vendor(transition, visibility 0s ease, opacity .2s ease)
+		display: block !important
+		z-index: 1
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: #FFF
+		visibility: hidden
+		opacity: 0
+		cursor: pointer
+
+	/* Just few cosmetic CSS for overlay fade in/out */
+	.offside-js--is-open .overlay
+		visibility: visible
+		opacity: .8
+		-webkit-transition-delay: delay 0s
+		-o-transition-delay: delay 0s
+		transition-delay: delay 0s
+
+	.arrow
+		display: none
+
+	.social
+		width: 60px
+
+@media screen and (max-width: 880px) and (orientation : landscape)
+	.copyright
+		position: relative
+		bottom: 0
+
+	.social article:before,
+	.social article:after
+		height: 60px
+
+	.social article:before
+		top: -80px
+
+	.social article:after
+		bottom: -80px

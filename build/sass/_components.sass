@@ -1,0 +1,190 @@
+/*
+ *      #####
+ *     #### _\_  ________
+ *     ##=-[.].]| \      \
+ *     #(    _\ |  |------|
+ *      #   __| |  ||||||||
+ *       \  _/  |  ||||||||
+ *    .--'--'-. |  | ____ |
+ *   / __      `|__|[o__o]|
+ * _(____nm_______ /____\____
+ *
+ * @file
+ * Global Stylesheets
+ *
+ * @author
+ * Ghis Bakour <hello@fatasuir9.com>
+ *
+ * @copyright
+ * Copyright (c) fatasuir9.com, Ghis Bakour, 2018
+ *
+ */
+
+
+
+/*------------------------------------*\
+ *    $LOGO
+ *\*------------------------------------
+
+
+.logo
+	display: block
+	margin: 2.2em 0 2.2em 30px
+	width: 120px
+
+
+/*------------------------------------*\
+ *    $BUTTONS
+ *\*------------------------------------
+
+
+.btn
+	@include vendor(transition, background-color 400ms ease-in-out)
+	border: 1px solid $dark
+	display: inline-block
+	margin-top: 20px
+	padding: 12px 3rem
+	text-decoration: none
+	color: $dark
+	width: auto
+
+	&:hover
+		text-decoration: none !important
+		background-color: $dark
+		color: $light
+
+	&.btn--light
+		border: 1px solid $light
+		color: $light
+
+		&:hover
+			background-color: $light
+			color: $dark !important
+
+
+	&.btn--menu
+		margin: 0
+		padding: 0
+		border: 0
+
+		img
+			height: 20px
+			width: 12px
+
+		&:hover
+			background-color: transparent
+			color: inherit
+
+
+/*------------------------------------*\
+ *    $NAVIGATION
+ *\*------------------------------------
+
+
+nav
+	text-align: left
+
+
+	ul
+		list-style: none
+		line-height: normal
+		margin: 0
+		padding: 0
+
+
+	li
+		margin-bottom: 20px
+
+
+		.nav-hyper
+			border: 0
+			font-family: 'Quattrocento Sans', sans-serif
+			display: block
+			color: $light
+			padding: 10px 0 10px 40px
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: 700
+			font-size: 1.6rem
+
+
+			span:nth-of-type(2)
+				display: block
+				color: rgb(120, 120, 120)
+				font-size: 1.1rem
+				text-transform: none
+				margin-top: 4px
+				font-weight: 400
+
+
+		.nav-hyper--active
+			position: relative
+
+
+			&:after
+				content: ""
+				border-bottom: 1px solid rgb(255, 255, 255)
+				width: 10%
+				left: 40px
+				height: 1px
+				position: absolute
+				bottom: 0
+
+
+/*------------------------------------*\
+ *    $COPYRIGHT
+ *\*------------------------------------
+
+
+.copyright
+	font-size: 1.0rem
+	color: rgb(120, 120, 120)
+	position: absolute
+	bottom: 15px
+	margin-left: 30px
+
+
+/*------------------------------------*\
+ *    $SOCIAL
+ *\*------------------------------------
+
+
+.social
+	color: red
+	position: fixed
+	right: 0
+	top: 0
+	height: 100%
+	width: 80px
+
+
+	article
+		align-self: center
+		position: relative
+
+
+		&:before, &:after
+			content: ""
+			height: 90px
+			border-left: 1px solid rgb(14, 14, 33)
+			width: 1px
+			position: absolute
+			right: 10px
+
+
+		&:before
+			top: -120px
+
+
+		&:after
+			bottom: -120px
+
+
+	a.icon
+		display: block
+		margin: 8px 0
+
+
+		&:hover
+			background-color: transparent
+			color: $dark
