@@ -66,6 +66,7 @@ module.exports = function(grunt) {
 				'<%= distDir.base %>/talks/css-architecture/index.php': '<%= distDir.view %>/talks/css-architecture/index.php',
 				'<%= distDir.base %>/talks/task-runners/index.php': '<%= distDir.view %>/talks/task-runners/index.php',
 				'<%= distDir.base %>/recognition/index.php': '<%= distDir.view %>/recognition/index.php',
+				'<%= distDir.base %>/testimonials/index.php': '<%= distDir.view %>/testimonials/index.php',
 				'<%= distDir.base %>/contact/index.php': '<%= distDir.view %>/contact/index.php',
 			}
 		},

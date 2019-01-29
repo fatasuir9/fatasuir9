@@ -1,25 +1,25 @@
 doctype html
 != "<html lang='en' xml:lang='en'>"
 	head
-		include ../../templates/meta.jade
+		include ../templates/meta.jade
 
-		meta(name='title', content='Ghis Bakour | Task Runners ')
+		meta(name='title', content='Ghis Bakour | Testimonials ')
 		meta(name='description', content="The best way to predict the future is to create it")
 
 		// Facebook
-		meta(property='og:title', content='Ghis Bakour | Task Runners ')
+		meta(property='og:title', content='Ghis Bakour | Testimonials ')
 		meta(property='og:description', content="The best way to predict the future is to create it")
 
 		// Twitter
-		meta(name='twitter:title', content='Ghis Bakour | Task Runners ')
+		meta(name='twitter:title', content='Ghis Bakour | Testimonials ')
 		meta(name='twitter:description', content="The best way to predict the future is to create it")
 
-		include ../../templates/head.jade
+		include ../templates/head.jade
 
-		title='Ghis Bakour | Task Runners '
+		title='Ghis Bakour | Testimonials '
 
-		link(href='../../images/logo-b.png', rel='icon', type='image/png')
-		link(href='../../css/style.css', rel='stylesheet', type='text/css')
+		link(href='../images/logo-b.png', rel='icon', type='image/png')
+		link(href='../css/style.css', rel='stylesheet', type='text/css')
 
 	body
 		.load
@@ -27,13 +27,13 @@ doctype html
 
 		main.main
 			a.btn.btn--menu(href="#")
-				img(src='../../images/icons/icon-menu.svg')
+				img(src='../images/icons/icon-menu.svg')
 
 			.overlay
 
 			aside.menu.offside.offside--left
 				a.logo(href='/')
-					img(src='../../images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='100')
+					img(src='../images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='100')
 
 				nav.nav
 					ul
@@ -43,13 +43,13 @@ doctype html
 						li: a.nav-hyper(href="/projects")
 							span Projects
 							span My Exhibition Room
-						li: a.nav-hyper.nav-hyper--active(href="/talks")
+						li: a.nav-hyper(href="/talks")
 							span Talks
 							span Back to Community
 						li: a.nav-hyper(href="/recognition")
 							span Recognition
 							span The Golden Trophies
-						li: a.nav-hyper(href="/testimonials")
+						li: a.nav-hyper.nav-hyper--active(href="/testimonials")
 							span Testimonials
 							span Coming Soon
 						li: a.nav-hyper(href="/contact")
@@ -59,21 +59,17 @@ doctype html
 				.copyright
 
 			section.talks.offside-content
-				h1.label // Decks
+				h1.label // References
 				.arrow ↓
 
 				article
-					h1.headline Talks
+					h1.headline Testimonials
 					hr
-
-					.rows
-						h4.quattrocento Grunt vs. Gulp Task Runners
-						p There's no doubt that task runners exist for a purpose. Primarily is to boost productivity while working on web-based applications. There are many in the market that provide the same services and some of which are grunt & gulp. In this workshop presentation, I share the stage with a friend to go head to head on a battle of which task runner deserves the highest rank. Drum rolls!
-
-						!= '<iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/de2bb51b5c7f4e90914d5718f56b0271?" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="530px"></iframe>'
+					h3.quattrocento &ldquo;Coming soon&rdquo;
 
 
-			include ../../templates/social.jade
 
-		include ../../templates/footer.jade
+			include ../templates/social.jade
+
+		include ../templates/footer.jade
 != "</html>"
