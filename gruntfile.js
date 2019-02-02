@@ -60,6 +60,7 @@ module.exports = function(grunt) {
 				'<%= distDir.base %>/about/index.php': '<%= distDir.view %>/about/index.php',
 				'<%= distDir.base %>/projects/index.php': '<%= distDir.view %>/projects/index.php',
 				'<%= distDir.base %>/projects/grypp/index.php': '<%= distDir.view %>/projects/grypp/index.php',
+				'<%= distDir.base %>/projects/isight/index.php': '<%= distDir.view %>/projects/isight/index.php',
 				'<%= distDir.base %>/talks/index.php': '<%= distDir.view %>/talks/index.php',
 				'<%= distDir.base %>/talks/interaction-design/index.php': '<%= distDir.view %>/talks/interaction-design/index.php',
 				'<%= distDir.base %>/talks/task-analysis/index.php': '<%= distDir.view %>/talks/task-analysis/index.php',
