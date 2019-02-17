@@ -1,0 +1,68 @@
+doctype html
+!= "<html lang='en' xml:lang='en'>"
+	head
+		include templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | 404')
+		meta(name='description', content="Page Not Found")
+
+		include templates/head.jade
+
+		title='Ghis Bakour | 404'
+
+		link(href='images/logo-b.png', rel='icon', type='image/png')
+		link(href='css/style.css', rel='stylesheet', type='text/css')
+
+	body
+		.load
+			!= '<svg width="60" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bars"><rect ng-attr-x="{{config.x1}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="15" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="35" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="55" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x4}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="75" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>'
+
+		main.main
+			a.btn.btn--menu(href="#")
+				img(src='../images/icons/icon-menu.svg')
+
+			.overlay
+
+			aside.menu.offside.offside--left
+				a.logo(href='/')
+					img(src='images/logo-w.png'  alt='Ghis Bakour logo 2016'  width='100')
+
+				nav.nav
+					ul
+						li: a.nav-hyper(href="/about")
+							span About
+							span The Creative Mind
+						li: a.nav-hyper(href="/projects")
+							span Projects
+							span My Exhibition Room
+						li: a.nav-hyper(href="/talks")
+							span Talks
+							span My Contribution
+						li: a.nav-hyper(href="/recognition")
+							span Recognition
+							span Professional Milestones
+						li: a.nav-hyper(href="/testimonials")
+							span Testimonials
+							span Past Collaborations
+						li: a.nav-hyper(href="/contact")
+							span Contact
+							span Getting in Touch
+				.copyright
+
+
+			section.found.offside-content
+				h1.label // Not Found
+
+				article
+					h1.headline
+						span 4
+						span.emoji 😲
+						span 4
+					h3.quattrocento Uh oh. That page you are looking for doesn't exist here.
+					h4.quattrocento Try again or why not just go home?
+					a.anchor.btn(href="/") Go back home
+
+			include templates/social.jade
+
+		include templates/footer.jade
+!= "</html>"

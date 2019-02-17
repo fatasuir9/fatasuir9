@@ -57,6 +57,7 @@ module.exports = function(grunt) {
 			},
 			files: {
 				'<%= distDir.base %>/index.php': '<%= distDir.view %>/index.php',
+				'<%= distDir.base %>/404.php': '<%= distDir.view %>/404.php',
 				'<%= distDir.base %>/about/index.php': '<%= distDir.view %>/about/index.php',
 				'<%= distDir.base %>/projects/index.php': '<%= distDir.view %>/projects/index.php',
 				'<%= distDir.base %>/projects/grypp/index.php': '<%= distDir.view %>/projects/grypp/index.php',
