@@ -98,28 +98,10 @@
 		.label
 			display: none
 
-		.columns
-			flex-wrap: wrap
-
-			.column
-				flex: 0 1 auto
-				margin-bottom: 4em
-
-				&:nth-child(even)
-					margin-left: 0
-
-				&:last-child
-					margin-bottom: 0
-
 		&.intro
 			h1
 				font-size: 5rem
 				line-height: .9em
-
-		&.about
-			.circle
-				margin: 2em 0
-				width: 100%
 
 		&.projects
 
@@ -163,6 +145,40 @@
 
 	.social
 		width: 60px
+
+
+@media screen and (max-width: 660px)
+
+	.offside-content
+
+		.columns
+			flex-wrap: wrap
+
+			.column
+				flex: 0 1 auto
+				margin-bottom: 4em
+
+				&:nth-child(even)
+					margin-left: 0
+
+				&:last-child
+					margin-bottom: 0
+
+		&.about
+			.circle
+				margin: 7em 0 2em 2em
+				width: 45%
+
+
+@media screen and (max-width: 520px)
+
+	.offside-content
+
+		&.about
+			.circle
+				margin: 2em 0 2em
+				width: 100%
+
 
 @media screen and (max-width: 880px) and (orientation : landscape)
 
