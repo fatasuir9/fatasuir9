@@ -1,7 +1,7 @@
 // Loading screen before page loads
 $(window).load(function() {
 	// Animate loader off screen
-	$('.load').fadeOut('slow');
+	$('.load').delay(1200).fadeOut('slow');
 });
 
 // Copyright snippet

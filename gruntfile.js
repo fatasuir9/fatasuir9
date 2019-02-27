@@ -112,7 +112,19 @@ module.exports = function(grunt) {
     	},
     },
 
-    // Task no. 5: Image
+	// Task no. 5: Copy
+    copy:{
+        main:{
+			files:[{
+				expand: true,
+				cwd: '<%= srcDir.font %>',
+				src: '**',
+				dest: '<%= distDir.font %>'
+			}]
+        },
+    },
+
+    // Task no. 6: Image
     image:{
         dynamic:{
             files:[{
@@ -124,7 +136,7 @@ module.exports = function(grunt) {
         },
     },
 
-    // Task no. 6: Watch
+    // Task no. 7: Watch
     watch:{
         options:{
             spawn: false,
@@ -144,7 +156,7 @@ module.exports = function(grunt) {
 		},
     },
 
-    // Task no. 7: Pagespeed
+    // Task no. 8: Pagespeed
     pagespeed:{
         options:{
             nokey: true,
@@ -169,7 +181,7 @@ module.exports = function(grunt) {
     // Combined Tasks
 
     // Deployment
-    grunt.registerTask('build',['jade', 'htmlmin', 'sass', 'uglify', 'image']);
+    grunt.registerTask('build',['jade', 'htmlmin', 'sass', 'uglify', 'copy', 'image']);
 
     //Default
     grunt.registerTask('default',['watch']);
@@ -179,6 +191,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-image');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-pagespeed');
