@@ -1,8 +1,18 @@
+// HIDDEN FILES
 .DS_Store
+.sass-cache
 
-node_modules
-public
-temp
+// SSL CERT
+server.crt
+server.key
 
+// NODE MODELS
+node_modules/*
+
+// GENERATED FILES
+temp/*
+public/*
+
+// SEARCH ENGINE FILES
 robots.txt
 sitemap.xml
