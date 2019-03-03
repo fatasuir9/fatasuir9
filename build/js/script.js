@@ -1,10 +1,3 @@
-// Check for service worker
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker
-			.register('../service-worker.js')
-			.then(function() { console.log('Service Worker Registered'); });
-}
-
 // Loading screen before page loads
 $(window).load(function() {
 	// Animate loader off screen

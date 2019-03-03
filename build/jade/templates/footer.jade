@@ -1,2 +1,10 @@
+| <script type='text/javascript'>
+| if ('serviceWorker' in navigator) {
+| 	navigator.serviceWorker
+| 		.register('https://fatasuir9.com/service-worker.js', {scope: '/'})
+| 		.then(function() { console.log('Service Worker Registered'); });
+| }
+| </script>
+
 include analytics.jade
 script(type='text/javascript' src='../../js/script.min.js')
