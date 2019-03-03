@@ -8,6 +8,8 @@ server.key
 
 // NODE MODELS
 node_modules/*
+package.json
+package-lock.json
 
 // GENERATED FILES
 temp/*
