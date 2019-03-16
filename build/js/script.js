@@ -4,9 +4,13 @@ $(window).load(function() {
 	$('.load').delay(1200).fadeOut('slow');
 });
 
-// Copyright snippet
+
 $(document).ready(function() {
+	// Copyright snippet
 	$('.copyright').append('©' + ' ' + new Date().getFullYear() + ' ' + 'All Rights Reserved.');
+
+	// Dark Mode
+	$('html').addClass('dk');
 });
 
 // Offside menu
