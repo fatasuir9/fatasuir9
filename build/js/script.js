@@ -10,7 +10,21 @@ $(document).ready(function() {
 	$('.copyright').append('©' + ' ' + new Date().getFullYear() + ' ' + 'All Rights Reserved.');
 
 	// Dark Mode
-	$('html').addClass('dk');
+	if($.cookie('darkmode') == 1) {
+		$('html').addClass('dark');
+	}
+
+	$('#dark').click(function() {
+		if($('html').hasClass('dark') == true) {
+			$('html').removeClass('dark');
+			$.cookie('darkmode', '0', {path: '/'});
+		}
+		else {
+			$('html').addClass('dark');
+			$.cookie('darkmode', '1', {path: '/'});
+		}
+	});
+
 });
 
 // Offside menu
