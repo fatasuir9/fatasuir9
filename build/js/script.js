@@ -1,11 +1,6 @@
-// Loading screen before page loads
-$(window).load(function() {
-	// Animate loader off screen
-	$('.load').delay(1200).fadeOut('slow');
-});
-
-
+// jQuery
 $(document).ready(function() {
+
 	// Copyright snippet
 	$('.copyright').append('©' + ' ' + new Date().getFullYear() + ' ' + 'All Rights Reserved.');
 
@@ -18,12 +13,12 @@ $(document).ready(function() {
 		if($('html').hasClass('dark') == true) {
 			$('html').removeClass('dark');
 			$('#dark img').attr('src', '../../images/icons/icon-night.svg');
-			$.cookie('darkmode', '0', {path: '/'});
+			$.cookie('darkmode', '0', {path: '/', expires: 365 * 2});
 		}
 		else {
 			$('html').addClass('dark');
 			$('#dark img').attr('src', '../../images/icons/icon-day.svg');
-			$.cookie('darkmode', '1', {path: '/'});
+			$.cookie('darkmode', '1', {path: '/', expires: 365 * 2});
 		}
 	});
 
@@ -33,6 +28,12 @@ $(document).ready(function() {
 		$('#dark img').attr('src', '../../images/icons/icon-night.svg');
 	}
 
+});
+
+// Loading screen before page loads
+$(window).load(function() {
+	// Animate loader off screen
+	$('.load').delay(1200).fadeOut('slow');
 });
 
 // Offside menu
