@@ -1,0 +1,98 @@
+doctype html
+!= "<html lang='en' xml:lang='en'>"
+	head
+		include ../templates/meta.jade
+
+		meta(name='title', content='Ghis Bakour | Contact')
+		meta(name='description', content="Senior Creative Designer with 8+ years of experience and deep passion for helping people solve problems. Currently based in Sunny Singapore.")
+		meta(name='keywords', content="Senior Designer, UX Strategist, UX Designer, UX Design, User Experience Designer, User Experience Certified, UI/UX Designer, CX, Customer Experience, Human-Centered Designer, Products, Digital, Service Design, Design Principles, Design Disciplines, Critical Thinking, About Ghis, Designer Identity")
+
+		// Facebook
+		meta(property='og:title', content='Ghis Bakour | Contact')
+		meta(property='og:description', content="Senior Creative Designer with 8+ years of experience and deep passion for helping people solve problems. Currently based in Sunny Singapore.")
+		meta(property='og:url', content='https://fatasuir9.com/about')
+
+		// Twitter
+		meta(name='twitter:title', content='Ghis Bakour | Contact')
+		meta(name='twitter:description', content="Senior Creative Designer with 8+ years of experience and deep passion for helping people solve problems. Currently based in Sunny Singapore.")
+		meta(name='twitter:url', content='https://fatasuir9.com/about')
+
+		include ../templates/head.jade
+
+		title='Ghis Bakour | Contact'
+
+		link(href='../images/favicon.png', rel='icon', type='image/png')
+		link(href='../css/style.css', rel='stylesheet', type='text/css')
+
+		include ../templates/tagmanager.jade
+
+	body
+		| <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM9VHP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+		.load
+			!= '<svg width="60" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bars"><rect ng-attr-x="{{config.x1}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="15" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="35" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#ababab" x="55" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x4}}" y="30" ng-attr-width="{{config.width}}" height="40" fill="#000000" x="75" width="10"><animate attributeName="opacity" calcMode="spline" values="1;0.2;1" keyTimes="0;0.5;1" dur="1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>'
+
+		main.main
+			a.btn.btn--menu(href="#") Menu
+				img(alt='Menu icon' src='../images/icons/icon-menu.svg')
+
+			.overlay
+
+			aside.menu.offside.offside--left
+				a.logo(href='/') Logo
+					svg(version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 421.9 421.9' enable-background='new 0 0 421.9 421.9' xml:space='preserve')
+						path(d='M203.4,256.3h74.8v16h-74.8h-16.2v-80.4v-16.4h231.7C402.1,75.8,315.4,0,211,0C94.5,0,0,94.5,0,211s94.5,211,211,211s211-94.5,211-211c0-6.4-0.3-12.8-0.9-19.1H203.4V256.3z')
+
+				nav.nav
+					ul
+						li: a.nav-hyper(href="/about")
+							span About
+							span The Creative Mind
+						li: a.nav-hyper(href="/projects")
+							span Projects
+							span My Exhibition Room
+						li: a.nav-hyper(href="/talks")
+							span Talks
+							span My Contribution
+						li: a.nav-hyper(href="/recognition")
+							span Recognition
+							span Professional Milestones
+						li: a.nav-hyper(href="/testimonials")
+							span Testimonials
+							span Past Collaborations
+						li: a.nav-hyper.nav-hyper--active(href="/contact")
+							span Contact
+							span Getting in Touch
+				.copyright
+
+
+			section.contact.offside-content
+				h1.label // Reach Out
+
+				article
+					h1.headline CONTACT
+					hr
+
+					h3
+					.rows
+						.row
+							h4.quattrocento For cross-collaboration:
+							a(href='mailto:hello@fatasuir9.com') hello@fatasuir9.com
+
+						.row
+							h4.quattrocento Social media channels:
+							p LinkedIn | &nbsp;
+								a(target='_blank' class='anchor' href='https://linkedin.com/in/fatasuir9') Discover
+
+							p Medium | &nbsp;
+								a(target='_blank' class='anchor' href='https://medium.com/@fatasuir9') Read
+
+
+							p Dribbble |  &nbsp;
+								a(target='_blank' class='anchor' href='https://dribbble.com/fatasuir9') See
+
+
+			include ../templates/social.jade
+
+		include ../templates/footer.jade
+!= "</html>"
